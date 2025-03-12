@@ -1,14 +1,12 @@
-# Project name
+# Sprijin de Urgență — Client
 
 [![GitHub contributors][ico-contributors]][link-contributors]
 [![GitHub last commit][ico-last-commit]][link-last-commit]
 [![License: MPL 2.0][ico-license]][link-license]
 
-Insert bullets description of the project if available.
 
-[See the project live][link-production]
+[See the project live][https://sprijindeurgenta.ro/]
 
-Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.
 
 [Contributing](#contributing) | [Built with](#built-with) | [Repos and projects](#repos-and-projects) | [Deployment](#deployment) | [Feedback](#feedback) | [License](#license) | [About Code for Romania](#about-code-for-romania)
 
@@ -32,8 +30,8 @@ This project is built with [Next.js](https://nextjs.org/) and [TypeScript](https
 To get started , you will first have to clone the repo.
 
 ```bash
-git clone https://github.com/code4romania/war-support-sprijin-de-urgenta-client
-cd war-support-sprijin-de-urgenta-client
+git clone https://github.com/code4romania/sprijin-de-urgenta-client
+cd sprijin-de-urgenta-client
 ```
 ### Install dependencies
 

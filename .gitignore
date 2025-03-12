@@ -46,3 +46,6 @@ debug.log
 /cypress/videos
 /cypress/screenshots
 /reports
+
+*.iml
+*.ipr

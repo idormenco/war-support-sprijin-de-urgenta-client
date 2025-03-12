@@ -30,9 +30,10 @@ export const parameters = {
   i18n,
   locale: 'ro',
   locales: {
-    ro: { title: 'RO', left: '🇷🇴' },
-    en: { title: 'EN', left: '🇬🇧' },
-    uk: { title: 'UK', left: '🇺k' },
+    ro: { title: 'RO', left: 'RO' },
+    en: { title: 'EN', left: 'EN' },
+    es: { title: 'ES', left: 'ES' },
+    uk: { title: 'UK', left: 'UK' },
     ru: { title: 'RU', left: 'RU' },
   },
 }

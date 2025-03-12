@@ -10,6 +10,10 @@ export const initialState = [
     href: '/en/food-requests/',
   },
   {
+    locale: 'es',
+    href: '/en/food-requests/',
+  },
+  {
     locale: 'uk',
     href: '/en/food-requests/',
   },

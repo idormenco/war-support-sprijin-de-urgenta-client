@@ -4,6 +4,7 @@ import type { AppProps } from 'next/app'
 import { FC } from 'react'
 import { initReactI18next } from 'react-i18next'
 import common_en from '../public/locales/en/common.json'
+import common_es from '../public/locales/es/common.json'
 import common_ro from '../public/locales/ro/common.json'
 import common_uk from '../public/locales/uk/common.json'
 import common_ru from '../public/locales/ru/common.json'
@@ -31,6 +32,7 @@ i18n.use(initReactI18next).init({
   defaultNS: 'common',
   resources: {
     en: { common: common_en },
+    es: { common: common_es },
     ro: { common: common_ro },
     uk: { common: common_uk },
     ru: { common: common_ru },

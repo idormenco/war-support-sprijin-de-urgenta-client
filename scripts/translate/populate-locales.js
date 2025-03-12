@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-/*   
+/*
     Update the CSV files with latest translations
     Run from terminal `npm run translate`
     Enjoy the 1 hour you won not copy pasting
@@ -18,11 +18,12 @@ const csvFilePath = './scripts/translate/JSON_Translations.csv'
 /**
  *   change as needed
  *   key = used to create the locale folder ex: ./public/locales/{key}/common.json
- *   value = the csv column header for each lang 
+ *   value = the csv column header for each lang
  */
 const localesMap = {
   ro: 'Romana',
   en: 'Engleza',
+  es: 'Spaniola',
   uk: 'Ucrainieana',
   ru: 'Rusa',
 }
@@ -43,7 +44,7 @@ const translate = async () => {
       (acc, cur) => ({ ...acc, [cur[identifier]]: cur[value]?.trim() }),
       {},
     )
-    
+
     // add file translations so we won't loose them
     // If both objects have a property with the same name, then the second object property overwrites the first
     var data =  {...langJson, ...languagesMapped }

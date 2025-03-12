@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-/*   
+/*
     Merges locales files and csv with translations to a new csv file
     Use this script to get missing translations
     beer++
@@ -20,11 +20,12 @@ const xlsxOutputFilePath = `./scripts/translate/JSON_Translations.xlsx`;
 /**
  *   change as needed
  *   key = used to create the locale folder ex: ./public/locales/{key}/common.json
- *   value = the csv column header for each lang 
+ *   value = the csv column header for each lang
  */
 const localesMap = {
   ro: 'Romana',
   en: 'Engleza',
+  es: 'Spaniola',
   uk: 'Ucrainieana',
   ru: 'Rusa',
 }
@@ -71,7 +72,7 @@ const generateJsonTranslationsCsv = async () => {
   const distinctKeys = new Set(allKeys)
 
   var rowsData = [];
-  // add header row 
+  // add header row
   rowsData.push([identifier, ...Object.values(localesMap)]);
 
   distinctKeys.forEach(key => {
@@ -86,7 +87,7 @@ const generateJsonTranslationsCsv = async () => {
   const ws = wb.addWorksheet('JSON_Translations');
 
   ws.addRows(rowsData);
-  
+
   wb.xlsx
     .writeFile(xlsxOutputFilePath)
     .then(() => {
